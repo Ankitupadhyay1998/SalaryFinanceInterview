@@ -1,0 +1,71 @@
+{
+  "runtime": "Net90",
+
+  "documentGenerator": {
+    "fromDocument": {
+      "url": "https://localhost:7147/swagger/v1/swagger.json"
+    }
+  },
+
+  "codeGenerators": {
+    "openApiToCSharpClient": {
+      "className": "SalaryFinanceApiClient",
+
+      "namespace": "SalaryFinanceInterview.ApiClient",
+
+      "generateClientClasses": true,
+      "generateClientInterfaces": true,
+
+      "injectHttpClient": true,
+      "disposeHttpClient": false,
+
+      "useBaseUrl": false,
+      "generateBaseUrlProperty": false,
+
+      "generateOptionalParameters": true,
+
+      "generateExceptionClasses": true,
+      "exceptionClass": "ApiException",
+
+      "wrapDtoExceptions": true,
+
+      "generateResponseClasses": true,
+      "responseClass": "ApiResponse",
+
+      "generateDtoTypes": true,
+
+      "operationGenerationMode": "MultipleClientsFromOperationId",
+
+      "classStyle": "Poco",
+
+      "jsonLibrary": "SystemTextJson",
+
+      "generateJsonMethods": false,
+
+      "generateDefaultValues": true,
+      "generateDataAnnotations": true,
+
+      "generateNullableReferenceTypes": true,
+
+      "generateSyncMethods": false,
+
+      "parameterArrayType": "System.Collections.Generic.IEnumerable",
+      "responseArrayType": "System.Collections.Generic.ICollection",
+
+      "dateType": "System.DateTimeOffset",
+      "dateTimeType": "System.DateTimeOffset",
+      "timeType": "System.TimeSpan",
+      "timeSpanType": "System.TimeSpan",
+
+      "arrayType": "System.Collections.Generic.ICollection",
+      "arrayInstanceType": "System.Collections.ObjectModel.Collection",
+
+      "dictionaryType": "System.Collections.Generic.IDictionary",
+      "dictionaryInstanceType": "System.Collections.Generic.Dictionary",
+
+      "generateOptionalPropertiesAsNullable": false,
+
+      "output": "Generated/SalaryFinanceApiClient.cs"
+    }
+  }
+}
