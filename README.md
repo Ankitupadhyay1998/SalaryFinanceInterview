@@ -1,7 +1,3 @@
-Here is a clean and professional README.md you can directly use for your assignment repository.
-
----
-
 md
 # Salary Finance Interview – API + SDK + Console Demo
 
