@@ -335,6 +335,12 @@ This solution demonstrates real-world enterprise backend architecture patterns i
 
 ---
 
-# Author
+## Author
 
-Candidate implementation for Senior Full Stack .NET Developer interview assignment.
+Developed by Ankit Kumar Upadhyay
+
+This project was created as part of a Senior Full Stack .NET Developer technical assignment demonstrating modern API-first and contract-driven architecture using ASP.NET Core, OpenAPI, NSwag, and MVC integration.
+
+## License
+
+This project is intended for educational and demonstration purposes.
