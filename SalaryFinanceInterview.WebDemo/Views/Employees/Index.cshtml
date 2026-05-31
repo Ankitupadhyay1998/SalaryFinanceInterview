@@ -1,0 +1,48 @@
+﻿@model ICollection<SalaryFinanceInterview.ApiClient.Employee>
+
+<h1>Employees</h1> <h6>(demo of problem details structure)</h6>
+@if (TempData["Success"] != null)
+{
+    <div style="
+        color:white;
+        background-color:green;
+        padding:10px;
+        margin-bottom:15px;">
+
+        @TempData["Success"]
+    </div>
+}
+
+<a href="/Employees/Create">Create Employee</a>
+
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.FullName</td>
+                <td>@employee.MonthlySalary</td>
+
+                <td>
+                    <a href="/Employees/Edit/@employee.Id">Edit</a>
+
+                    |
+
+                    <a href="/Employees/Delete/@employee.Id">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

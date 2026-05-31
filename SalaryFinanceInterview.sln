@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryFinanceInterview.ApiC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryFinanceInterview.ConsoleDemo", "SalaryFinanceInterview.ConsoleDemo\SalaryFinanceInterview.ConsoleDemo.csproj", "{8C30AD9E-2013-4183-ABDA-E1705DBF6269}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryFinanceInterview.WebDemo", "SalaryFinanceInterview.WebDemo\SalaryFinanceInterview.WebDemo.csproj", "{CEEE6136-A952-47D7-B961-5946CCB70705}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8C30AD9E-2013-4183-ABDA-E1705DBF6269}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C30AD9E-2013-4183-ABDA-E1705DBF6269}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C30AD9E-2013-4183-ABDA-E1705DBF6269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEE6136-A952-47D7-B961-5946CCB70705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEE6136-A952-47D7-B961-5946CCB70705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEE6136-A952-47D7-B961-5946CCB70705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEE6136-A952-47D7-B961-5946CCB70705}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

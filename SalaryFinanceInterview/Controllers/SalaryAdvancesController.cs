@@ -53,7 +53,7 @@ namespace SalaryFinanceInterview.Api.Controllers
                 return NotFound();
             }
 
-            return NoContent();
+            return Ok();
         }
     }
 }

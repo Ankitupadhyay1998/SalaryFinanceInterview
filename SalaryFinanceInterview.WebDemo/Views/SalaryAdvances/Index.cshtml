@@ -1,0 +1,37 @@
+﻿@model ICollection<SalaryFinanceInterview.ApiClient.SalaryAdvance>
+
+<h1>Salary Advances</h1>
+
+<a href="/SalaryAdvances/Create">
+    Create Salary Advance
+</a>
+
+<table border="1" cellpadding="10">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Advance Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var advance in Model)
+        {
+            <tr>
+                <td>@advance.Id</td>
+                <td>@advance.AdvanceAmount</td>
+
+                <td>
+                    <a href="/SalaryAdvances/Delete/@advance.Id">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

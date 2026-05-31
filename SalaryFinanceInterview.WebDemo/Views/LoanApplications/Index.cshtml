@@ -1,0 +1,43 @@
+﻿@model ICollection<SalaryFinanceInterview.ApiClient.LoanApplication>
+
+<h1>Loan Applications</h1>
+
+<a href="/LoanApplications/Create">
+    Create Loan Application
+</a>
+
+<table border="1" cellpadding="10">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Requested Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var loan in Model)
+        {
+            <tr>
+                <td>@loan.Id</td>
+                <td>@loan.RequestedAmount</td>
+
+                <td>
+                    <a href="/LoanApplications/Edit/@loan.Id">
+                        Edit
+                    </a>
+
+                    |
+
+                    <a href="/LoanApplications/Delete/@loan.Id">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

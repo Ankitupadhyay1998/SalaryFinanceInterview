@@ -1,0 +1,28 @@
+﻿@model SalaryFinanceInterview.ApiClient.LoanApplication
+
+<h1>Create Loan Application</h1>
+
+<form method="post">
+
+    <div>
+        <label>Id</label>
+        <input asp-for="Id" />
+    </div>
+
+    <div>
+        <label>Requested Amount</label>
+        <input asp-for="RequestedAmount" />
+    </div>
+
+    <div>
+        <label>Status</label>
+        <input asp-for="Status" />
+    </div>
+
+    <br />
+
+    <button type="submit">
+        Save
+    </button>
+
+</form>

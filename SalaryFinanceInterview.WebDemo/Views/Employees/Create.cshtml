@@ -1,0 +1,46 @@
+﻿@model SalaryFinanceInterview.ApiClient.Employee
+
+<h1>Create Employee</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div style="
+        color:white;
+        background-color:red;
+        padding:10px;
+        margin-bottom:15px;">
+
+        <strong>Error:</strong>
+
+        <pre>@ViewBag.Error</pre>
+    </div>
+}
+
+<form method="post">
+
+    <div>
+        <label>Id</label>
+        <input asp-for="Id" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Full Name</label>
+        <input asp-for="FullName" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Monthly Salary</label>
+        <input asp-for="MonthlySalary" />
+    </div>
+
+    <br />
+
+    <button type="submit">
+        Save
+    </button>
+
+</form>
